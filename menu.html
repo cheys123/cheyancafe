@@ -567,13 +567,27 @@
             align-items: center;
             gap: 0.5rem;
         }
+        .product-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* para laging maganda yung crop */
+    display: block;
+}
+
     </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-             <a href="#" class="logo">
+            <a href="#" class="logo">
                 <img src="Cheyan Cafe.png" alt="Cheyan Cafe Logo" class="logo-icon">
                 <span>Cheyan Cafe</span>
             </a>
@@ -663,7 +677,7 @@
                 category: "hot-drinks",
                 price: 85.00,
                 description: "Rich and bold shot of perfectly extracted espresso with a golden crema on top.",
-                icon: "☕",
+                image: "images/menu/espresso.jpg",
                 details: ["Single Shot", "25ml", "Bold"],
                 rating: 4.8,
                 reviews: 156
@@ -674,7 +688,7 @@
                 category: "hot-drinks",
                 price: 120.00,
                 description: "Equal parts espresso, steamed milk, and milk foam, dusted with cocoa powder.",
-                icon: "☕",
+                image: "images/menu/capuccino.jpg",
                 details: ["8oz", "Hot", "Creamy"],
                 rating: 4.9,
                 reviews: 203
@@ -685,7 +699,7 @@
                 category: "hot-drinks",
                 price: 135.00,
                 description: "Smooth espresso combined with steamed milk and a light layer of foam.",
-                icon: "☕",
+                image: "images/menu/caflet.jpg",
                 details: ["12oz", "Hot", "Smooth"],
                 rating: 4.7,
                 reviews: 189
@@ -696,7 +710,7 @@
                 category: "hot-drinks",
                 price: 95.00,
                 description: "Rich espresso diluted with hot water for a clean, strong coffee taste.",
-                icon: "☕",
+                image: "images/menu/amer.jpg",
                 details: ["8oz", "Hot", "Strong"],
                 rating: 4.6,
                 reviews: 142
@@ -707,7 +721,7 @@
                 category: "hot-drinks",
                 price: 155.00,
                 description: "Perfect blend of espresso, chocolate, steamed milk, and whipped cream.",
-                icon: "☕",
+                image: "images/menu/mochslat.jpg",
                 details: ["12oz", "Hot", "Chocolate"],
                 rating: 4.8,
                 reviews: 178
@@ -720,7 +734,7 @@
                 category: "cold-drinks",
                 price: 105.00,
                 description: "Refreshing cold espresso served over ice with chilled water.",
-                icon: "🧊",
+                image: "images/menu/iceamr.webp",
                 details: ["16oz", "Iced", "Refreshing"],
                 rating: 4.5,
                 reviews: 134
@@ -731,7 +745,7 @@
                 category: "cold-drinks",
                 price: 125.00,
                 description: "Slow-steeped coffee concentrate served over ice, smooth and naturally sweet.",
-                icon: "🧊",
+                image: "images/menu/cbd.webp",
                 details: ["16oz", "Cold", "Smooth"],
                 rating: 4.9,
                 reviews: 221
@@ -742,7 +756,7 @@
                 category: "cold-drinks",
                 price: 165.00,
                 description: "Espresso, vanilla syrup, cold milk, and caramel drizzle over ice.",
-                icon: "🧊",
+                image: "images/menu/icecar.jpg",
                 details: ["16oz", "Iced", "Caramel"],
                 rating: 4.7,
                 reviews: 167
@@ -753,7 +767,7 @@
                 category: "cold-drinks",
                 price: 175.00,
                 description: "Blended coffee drink with ice, milk, and flavored syrups topped with whipped cream.",
-                icon: "🥤",
+                image: "images/menu/fraps.jpg",
                 details: ["16oz", "Blended", "Sweet"],
                 rating: 4.6,
                 reviews: 145
@@ -764,7 +778,7 @@
                 category: "cold-drinks",
                 price: 145.00,
                 description: "Premium matcha powder whisked with cold milk and served over ice.",
-                icon: "🍵",
+                image: "images/menu/ic.jpg",
                 details: ["16oz", "Iced", "Matcha"],
                 rating: 4.4,
                 reviews: 98
@@ -777,7 +791,7 @@
                 category: "pastries",
                 price: 95.00,
                 description: "Buttery, flaky croissant filled with rich dark chocolate, baked fresh daily.",
-                icon: "🥐",
+                image: "images/menu/crs.jpg",
                 details: ["Fresh", "Chocolate", "Buttery"],
                 rating: 4.8,
                 reviews: 187
@@ -788,7 +802,7 @@
                 category: "pastries",
                 price: 85.00,
                 description: "Moist and fluffy muffin packed with fresh blueberries and a crumbly top.",
-                icon: "🧁",
+                image: "images/menu/bffs.webp",
                 details: ["Fresh", "Blueberry", "Fluffy"],
                 rating: 4.7,
                 reviews: 156
@@ -799,7 +813,7 @@
                 category: "pastries",
                 price: 115.00,
                 description: "Warm, gooey cinnamon roll with cream cheese frosting, perfect with coffee.",
-                icon: "🌀",
+                image: "images/menu/cnrh.png",
                 details: ["Warm", "Cinnamon", "Frosted"],
                 rating: 4.9,
                 reviews: 234
@@ -810,7 +824,7 @@
                 category: "pastries",
                 price: 75.00,
                 description: "Homemade banana bread with walnuts, moist and perfectly spiced.",
-                icon: "🍌",
+                image: "images/menu/banan.jpg",
                 details: ["Homemade", "Walnut", "Moist"],
                 rating: 4.6,
                 reviews: 123
@@ -821,7 +835,7 @@
                 category: "pastries",
                 price: 135.00,
                 description: "Rich and creamy New York style cheesecake with graham cracker crust.",
-                icon: "🍰",
+                image: "images/menu/cheese.webp",
                 details: ["Creamy", "NY Style", "Rich"],
                 rating: 4.8,
                 reviews: 198
@@ -834,7 +848,7 @@
                 category: "sandwiches",
                 price: 145.00,
                 description: "Classic grilled cheese with aged cheddar on artisan sourdough bread.",
-                icon: "🥪",
+                image: "images/menu/grec.jpg",
                 details: ["Cheddar", "Sourdough", "Grilled"],
                 rating: 4.5,
                 reviews: 112
@@ -845,7 +859,7 @@
                 category: "sandwiches",
                 price: 185.00,
                 description: "Triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayo.",
-                icon: "🥪",
+                image: "images/menu/turs.jpg",
                 details: ["Turkey", "Bacon", "Triple"],
                 rating: 4.7,
                 reviews: 167
@@ -856,7 +870,7 @@
                 category: "sandwiches",
                 price: 165.00,
                 description: "Fresh vegetables, hummus, and avocado wrapped in a spinach tortilla.",
-                icon: "🌯",
+                image: "images/menu/vegss.jpg",
                 details: ["Veggie", "Hummus", "Fresh"],
                 rating: 4.4,
                 reviews: 89
@@ -867,7 +881,7 @@
                 category: "sandwiches",
                 price: 155.00,
                 description: "Crispy bacon, fresh lettuce, and ripe tomatoes on toasted bread.",
-                icon: "🥪",
+                image: "images/menu/sad.jpg",
                 details: ["Bacon", "Fresh", "Toasted"],
                 rating: 4.6,
                 reviews: 134
@@ -878,7 +892,7 @@
                 category: "sandwiches",
                 price: 175.00,
                 description: "Grilled chicken breast with pesto, mozzarella, and roasted peppers.",
-                icon: "🥪",
+                image: "images/menu/chiks.webp",
                 details: ["Grilled", "Pesto", "Mozzarella"],
                 rating: 4.8,
                 reviews: 156
@@ -925,9 +939,10 @@
             productsGrid.innerHTML = productsToRender.map(product => `
                 <div class="product-card" data-category="${product.category}">
                     <div class="product-image">
-                        ${product.icon}
-                        <div class="product-category">${getCategoryName(product.category)}</div>
-                    </div>
+    <img src="${product.image}" alt="${product.name}">
+    <div class="product-category">${getCategoryName(product.category)}</div>
+</div>
+
                     <div class="product-info">
                         <h3 class="product-name">${product.name}</h3>
                         <p class="product-description">${product.description}</p>
